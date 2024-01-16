@@ -31,11 +31,11 @@ public class BarcodeActivity extends AppCompatActivity {
         codeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
             public void onDecoded(@NonNull Result result) {
-//                Toast.makeText(getApplicationContext(), "Barcode Value :" + result.getText(), Toast.LENGTH_SHORT);
-//                Log.d("Barcode Value :", "Barcode Value :" + result.getText());
+                Toast.makeText(BarcodeActivity.this, "Barcode Value :" + result.getText(), Toast.LENGTH_SHORT);
+                Log.d("Barcode Value :", "Barcode Value :" + result.getText());
 //                codeScanner.startPreview();
 
-//                checkBarcodeResult(result.getText());
+                checkBarcodeResult(result.getText());
 
                 runOnUiThread(new Runnable() {
                     @Override

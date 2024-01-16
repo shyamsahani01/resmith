@@ -16,9 +16,10 @@
         android:roundIcon="@mipmap/app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Resmith"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".pages.GoogleBarcodeActivity"
+            android:name=".pages.UploadVideoActivity"
             android:exported="false" />
         <activity
             android:name=".pages.BarcodeActivity"
